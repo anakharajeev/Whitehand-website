@@ -1,0 +1,265 @@
+:root {
+
+	--main-color: #32A6A9;
+	--color-two: #7B7B7B;
+	--color-three: #13486B;
+	--color-four: #333333;
+	--white-color: rgb(255, 255, 255);
+	--white-color-rgb: 255, 255, 255;
+	--black-color: rgb(0, 0, 0);
+	--black-color-rgb: 0, 0, 0;
+
+}
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+ ***/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	outline: none;
+}
+
+/*** 
+
+====================================================================
+	Global Settings
+====================================================================
+
+***/
+
+body {
+	font-family: 'Cairo';
+	font-size: 14px;
+	line-height: 1.6em;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	/* overflow-x: hidden; */
+}
+
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: var(--main-color);
+}
+
+.text-right {
+	text-align: right;
+}
+
+.form-control:focus{
+	box-shadow: none !important;
+}
+
+button,
+a:hover,
+a:focus,
+a:visited {
+	text-decoration: none;
+	outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	position: relative;
+	margin: 0px;
+	background: none;
+}
+
+textarea {
+	overflow: hidden;
+}
+
+a {
+	-webkit-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.text,
+p {
+	line-height: 35px;
+    font-size: 17px;
+	color: var(--color-two);
+}
+
+/* Typography */
+
+h1 {
+	line-height: 65px;
+	font-size: 50px;
+}
+
+h2 {
+	line-height: 50px;
+	font-size: 36px;
+}
+
+h3 {
+	line-height: 1.3em;
+	font-size: 30px;
+}
+
+h4 {
+	line-height: 1.4em;
+	font-size: 24px;
+}
+
+h5 {
+	line-height: 1.4em;
+	font-size: 20px;
+}
+
+h6 {
+	line-height: 1.6em;
+	font-size: 18px;
+}
+
+ul,
+li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.centered {
+	text-align: center;
+}
+
+::-webkit-input-placeholder {
+	color: inherit;
+}
+
+::-moz-input-placeholder {
+	color: inherit;
+}
+
+::-ms-input-placeholder {
+	color: inherit;
+}
+
+/***
+
+====================================================================
+	Scroll To Top style
+====================================================================
+
+***/
+
+/* Backto Up */
+
+.progress-wrap {
+	position: fixed;
+    left: 45px;
+    bottom: 11px;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	display: block;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	box-shadow: inset 0 0 0 2px #EDF6FF;
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+	transform: translateY(15px);
+	-webkit-transform: translateY(15px);
+	-moz-transform: translateY(15px);
+	-ms-transform: translateY(15px);
+	-o-transform: translateY(15px);
+}
+
+.progress-wrap.active-progress {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.progress-wrap::after {
+	position: absolute;
+	content: '\f062';
+	font-family: 'FontAwesome';
+	text-align: center;
+	line-height: 40px;
+	font-size: 17px;
+	color: var(--main-color);
+	left: 0;
+	top: 0;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	display: block;
+	z-index: 1;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+.progress-wrap svg path {
+	fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+	stroke: var(--main-color);
+	stroke-width: 4;
+	box-sizing: border-box;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+
+
+
+/* scroll */
+
+.progress-wrap1 {
+	position: absolute;
+    left: 45px;
+    top: 30%;
+    width: 2px;
+    height: 130px;
+    cursor: pointer;
+    display: block;
+    background-color: #3ac2bc;
+    z-index: 2;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+	transform: translateY(15px);
+	-webkit-transform: translateY(15px);
+	-moz-transform: translateY(15px);
+	-ms-transform: translateY(15px);
+	-o-transform: translateY(15px);
+}
+
+.progress-wrap1 .actv{
+	position: absolute;
+    width: 5px;
+    height: 70px;
+    border-radius: 3px;
+    left: -2px;
+    top: 0;
+    background-color: #3ac2bc
+}
+
+
